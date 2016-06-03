@@ -1,0 +1,69 @@
+.flightCard {
+  background-color: #efefef;
+  -ms-border-radius: 5px;
+  border-radius: 10px;
+  border-color: #fff;
+  margin: 10px;
+  padding: 10px;
+  transition: background-color 0.9s;
+}
+
+.flightCard:hover {
+  background-color: cadetblue;
+  -ms-border-radius: 5px;
+  border-radius: 10px;
+  border-color: #fff;
+  margin: 10px;
+  padding: 10px;
+}
+
+.colorbox {
+  width: 20px;
+  display: inline-block;
+  height: 20px;
+}
+
+.modal-dialog.active{
+  animation: slideUp .65 .5s cubic-bezier(0.17,0.89,0.32.1.28) forwards,
+  fadeIn .65 .5s forwards;
+}
+.modal-content{
+  background-color: lavender;
+}
+.close {
+  transition: transform 4s;
+  color: blue;
+}
+.btn:hover{
+  background-color:#70EF91;
+}
+
+.close:hover {
+  transform: rotate(360deg)!important;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  to {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+@keyframes slideUp{
+  from{
+    transform: translateY(400px);
+  }
+  to{
+    transform: translateY(-300px);
+  }
+}
+/*.modalClose{
+  font-size: 200%;
+  right: 15px;
+  top:0;
+  position: absolute;
+}*/
